@@ -1,2 +1,14 @@
 # movie_match_bot
-helper bot with AI for select film
+Бот для помощи подбора фильмов с использованием AI
+
+# Как начать?
+
+1. Выпустить токен бота telegram
+2. Создать токен в gemini
+3. Создайте .env
+4. Добавьте структуру:
+```.env
+BOT_TOKEN=<Токен телеграмм-бота>
+GEMINI_API_KEY=<Токен gemini-studio>
+ADMIN_NAME=<Ваш ник в телеграмм> 
+```
