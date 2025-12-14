@@ -11,7 +11,7 @@ ADMIN_NAME = os.getenv('ADMIN_NAME')
 ADMIN_IDS = [f"{ADMIN_NAME}"]
 
 # Настройки Gemini
-GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_MODEL = os.getenv('GEMINI_MODEL')
 GEMINI_TEMPERATURE = 0.7
 GEMINI_MAX_TOKENS = 2000
 
@@ -20,4 +20,4 @@ if not BOT_TOKEN:
     raise ValueError("BOT_TOKEN не найден в .env файле")
 
 if not GEMINI_API_KEY:
-    print("⚠️  ВНИМАНИЕ: GEMINI_API_KEY не найден. Будут использоваться резервные рекомендации.")
+    print("⚠️ ВНИМАНИЕ: GEMINI_API_KEY не найден. Будут использоваться резервные рекомендации.")
